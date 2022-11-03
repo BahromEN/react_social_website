@@ -21,7 +21,16 @@ let state = {
             { id: 3, name: 'Zida' },
             { id: 4, name: 'Lara' }
         ]
-    }
+    },
+    sidebar:{
+        friends: [
+            { id: 1, name: 'Kolya' },
+            { id: 2, name: 'Dima' },
+            { id: 3, name: 'Nina' },
+            { id: 4, name: 'Lera' }
+        ]
+    }       
+    
 
 };
 
