@@ -6,7 +6,7 @@ import Sidebar from "./Sidebar/Sidebar";
 const Navbar = (props) => {
     
     let sidebarElements = props.state.friends.map((el) => {
-        return <Sidebar names={el.name}/>;
+        return <Sidebar names={el.name} key={el.id}/>;
     })
 
     return (
