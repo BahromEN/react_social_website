@@ -12,7 +12,7 @@ const Dialogs = (props) => {
 
     let newMessageElement = React.createRef();
     let addMessageHandle = () => {
-        let text = newMessageElement.current.value;
+        // let text = newMessageElement.current.value;
         props.dispatch(addMessageActionCreator());
     }
 

@@ -1,3 +1,4 @@
+import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Dialogs from './components/Dialogs/Dialogs';
@@ -22,7 +23,8 @@ const App = (props) => {
             <Route path='/profile'
               element={<Profile
                 profilePage={props.state.profilePage}
-                dispatch={props.dispatch}/>} />
+                dispatch={props.dispatch}
+                store={props.store}/>} />
 
             <Route path='/dialogs'
               element={<Dialogs 
