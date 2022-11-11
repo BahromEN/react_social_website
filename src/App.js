@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-import Dialogs from './components/Dialogs/Dialogs';
+import DialogsContainer from './components/Dialogs/DialogsContainer';
 import Header from './components/Header/Header';
 import Music from './components/Music/Music';
 import Navbar from './components/Navbar/Navbar';
@@ -21,15 +21,10 @@ const App = (props) => {
           <Routes>
 
             <Route path='/profile'
-              element={<Profile
-                profilePage={props.state.profilePage}
-                dispatch={props.dispatch}
-                store={props.store}/>} />
+              element={<Profile store={props.store} />} />
 
             <Route path='/dialogs'
-              element={<Dialogs 
-                dialogsPage={props.state.dialogsPage} 
-                dispatch={props.dispatch}/>} />
+              element={<DialogsContainer store={props.store} />} />
 
             <Route path='/news'
               element={<News />} />
